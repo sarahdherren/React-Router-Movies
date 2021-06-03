@@ -70,3 +70,47 @@ body {
   padding: 5px 10px;
   background-color: lightskyblue;
 }
+
+.navbar {
+  margin: 0;
+  padding: 0;
+  height: 64px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+
+  .navbar > li > a {
+    color: #4285f4;
+    text-decoration: none;
+    padding: 24px;
+    height: 16px;
+    
+  }
+  
+  .navbar > li > a.activeNavButton {
+    background-color: #4285f4;
+    color: white;
+  }
+
+  .nav-buttons {
+    margin: 16px 36px;
+    text-decoration: none;
+    border: none;
+    padding: 6px 16px;
+    font-size: 16px;
+    background-color: #4285f4;
+    color: white;
+    transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0.2s;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  }
+  
+  .nav-buttons > a:active {
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2);
+    transition-delay: 0s;
+  }
+  
